@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#EAEAEA">
+
+    <!-- 어떤 Layout을 사용해도 상관없음 -->
+    <!-- 스크롤 바를 위한 공간 확보용 paddingRight="5px" 주목 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingRight="5px" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="산사태"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:background="#FF9966"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            />
+
+        <Button
+            android:id="@+id/RefugeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_main_shape"
+            android:onClick="onButtonClickRefuge"
+            android:text="대피소 위치"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:text="산사태발생시\n
+1.산사태가 일어날 가능성이있다면 대피할 준비를하며 행정기관등에서 알려주는 대피장소를 파악해놓는다.\n
+2.대피직전 집안의 가스나 전기사용제품등의 콘센트를 뽑아놓는다.\n
+3.대피를 하며 소식을 듣지못했을 가능성이있는 주변이웃들에게도 대피사실을 알린다.\n
+4.대피후에는 안전한장소에 머무르며 추후 지시를 기다린다."
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/landslide" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="환경 설정"
+        android:key="settings">
+        <SwitchPreference
+            android:key="push_setting"
+            android:title="푸시알림 받기"
+            android:defaultValue="true"/>
+        <EditTextPreference
+            android:key="nickname_setting"
+            android:title="닉네임 변경"
+            android:defaultValue=" "/>
+    </PreferenceCategory>
+</PreferenceScreen>

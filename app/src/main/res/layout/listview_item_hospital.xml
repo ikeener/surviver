@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#CCCCCC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:background="#ff9966"
+            android:layout_weight="5">
+        <TextView
+            android:id="@+id/text_hospitalName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="병원이름"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_weight="4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="6">
+
+            <TextView
+                android:id="@+id/text_hospitalAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="주소"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_weight="4"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/text_hospitalPhoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="연락처"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/text_hospitalDistance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="거리"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

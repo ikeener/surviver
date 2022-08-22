@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EEEEEE">
+
+    <Button
+        android:id="@+id/FireButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_action_fire"
+        android:backgroundTint="#000000"
+        android:onClick="onButtonClickFire"
+        android:paddingLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fireFrame"
+        app:layout_constraintEnd_toEndOf="@+id/fireFrame"
+        app:layout_constraintStart_toStartOf="@+id/fireFrame"
+        app:layout_constraintTop_toTopOf="@+id/fireFrame" />
+
+    <Button
+        android:id="@+id/TyphoonButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_action_typhoon"
+        android:backgroundTint="#000000"
+        android:onClick="onButtonClickTyphoon"
+        android:paddingLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/typhoonFrame"
+        app:layout_constraintEnd_toEndOf="@+id/typhoonFrame"
+        app:layout_constraintStart_toStartOf="@+id/typhoonFrame"
+        app:layout_constraintTop_toTopOf="@+id/typhoonFrame" />
+
+    <Button
+        android:id="@+id/EarthquakeButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_action_earthquake"
+        android:backgroundTint="#000000"
+        android:onClick="onButtonClickEarthquake"
+        android:paddingLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/earthquakeFrame"
+        app:layout_constraintEnd_toEndOf="@+id/earthquakeFrame"
+        app:layout_constraintStart_toStartOf="@+id/earthquakeFrame"
+        app:layout_constraintTop_toTopOf="@+id/earthquakeFrame" />
+
+    <Button
+        android:id="@+id/LandslideButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_action_landslide"
+        android:backgroundTint="#000000"
+        android:onClick="onButtonClickLandslide"
+        android:paddingLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/landslideFrame"
+        app:layout_constraintEnd_toEndOf="@+id/landslideFrame"
+        app:layout_constraintStart_toStartOf="@+id/landslideFrame"
+        app:layout_constraintTop_toTopOf="@+id/landslideFrame" />
+
+    <Button
+        android:id="@+id/NotificationButton"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_action_notification"
+        android:backgroundTint="#000000"
+        android:onClick="onButtonClickNotification"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout3" />
+
+    <FrameLayout
+        android:id="@+id/notificationFrame"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_main_shape"
+        android:onClick="onButtonClickNotification"
+        app:layout_constraintBottom_toBottomOf="@+id/notificationFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/notificationFrame">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:background="@drawable/login"
+        android:onClick="onButtonClickLogin"
+        app:layout_constraintBottom_toBottomOf="@+id/loginFrame"
+        app:layout_constraintEnd_toEndOf="@+id/loginFrame"
+        app:layout_constraintStart_toStartOf="@+id/loginFrame"
+        app:layout_constraintTop_toTopOf="@+id/loginFrame" />
+
+    <Button
+        android:id="@+id/SettingsButton"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:background="@drawable/config"
+        android:onClick="onButtonClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/settingFrame"
+        app:layout_constraintEnd_toEndOf="@+id/settingFrame"
+        app:layout_constraintStart_toStartOf="@+id/settingFrame"
+        app:layout_constraintTop_toTopOf="@+id/settingFrame" />
+
+    <TextView
+        android:id="@+id/notificationText"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:text="주변 알리미"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/NotificationButton"
+        app:layout_constraintEnd_toEndOf="@+id/notificationFrame"
+        app:layout_constraintStart_toStartOf="@+id/notificationFrame"
+        app:layout_constraintTop_toTopOf="@+id/notificationFrame"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <FrameLayout
+        android:id="@+id/fireFrame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_space_shape"
+        android:onClick="onButtonClickFire"
+        app:layout_constraintBottom_toTopOf="@+id/earthquakeFrame"
+        app:layout_constraintEnd_toStartOf="@+id/typhoonFrame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationFrame">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fireText"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="화재"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/FireButton"
+        app:layout_constraintStart_toStartOf="@+id/FireButton"
+        app:layout_constraintTop_toBottomOf="@+id/FireButton" />
+
+    <FrameLayout
+        android:id="@+id/typhoonFrame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_space_shape"
+        android:onClick="onButtonClickTyphoon"
+        app:layout_constraintBottom_toTopOf="@+id/landslideFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fireFrame"
+        app:layout_constraintTop_toBottomOf="@+id/notificationFrame">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/typhoonText"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="태풍"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/typhoonFrame"
+        app:layout_constraintStart_toStartOf="@+id/typhoonFrame"
+        app:layout_constraintTop_toBottomOf="@+id/TyphoonButton" />
+
+    <FrameLayout
+        android:id="@+id/earthquakeFrame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_space_shape"
+        android:onClick="onButtonClickEarthquake"
+        app:layout_constraintBottom_toTopOf="@+id/loginFrame"
+        app:layout_constraintEnd_toStartOf="@+id/landslideFrame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fireFrame">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/earthquakeText"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:text="지진"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/earthquakeFrame"
+        app:layout_constraintStart_toStartOf="@+id/earthquakeFrame"
+        app:layout_constraintTop_toBottomOf="@+id/EarthquakeButton" />
+
+    <FrameLayout
+        android:id="@+id/landslideFrame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_space_shape"
+        android:onClick="onButtonClickLandslide"
+        app:layout_constraintBottom_toTopOf="@+id/settingFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/earthquakeFrame"
+        app:layout_constraintTop_toBottomOf="@+id/typhoonFrame">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/landslideText"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:text="산사태"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/landslideFrame"
+        app:layout_constraintStart_toStartOf="@+id/landslideFrame"
+        app:layout_constraintTop_toBottomOf="@+id/LandslideButton" />
+
+    <FrameLayout
+        android:id="@+id/loginFrame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_space_shape"
+        android:onClick="onButtonClickLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/settingFrame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earthquakeFrame">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/settingFrame"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_space_shape"
+        android:onClick="onButtonClickSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginFrame"
+        app:layout_constraintTop_toBottomOf="@+id/landslideFrame">
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

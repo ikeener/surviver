@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HospitalActivity"
+    android:background="#EAEAEA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="응급실 위치"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:background="#FF9966"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/hospitalCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button_main_shape"
+        android:text="주변 응급실 정보" />
+
+    <ListView
+        android:id="@+id/List_Hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="4dp">
+
+    </ListView>
+
+</LinearLayout>

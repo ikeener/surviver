@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:background="#EAEAEA">
+
+    <!-- 어떤 Layout을 사용해도 상관없음 -->
+    <!-- 스크롤 바를 위한 공간 확보용 paddingRight="5px" 주목 -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingRight="5px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="화재"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:background="#FF9966"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/HospitalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_main_shape"
+                android:onClick="onButtonClickHospital"
+                android:text="응급실 위치"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/RefugeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_main_shape"
+                android:onClick="onButtonClickRefuge"
+                android:text="대피소 위치"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:text="실내화재시\n
+1.화재경보가 울릴시 화재를 확인하려기보단 소리를질러 사람들에게 알린뒤 서둘러 대피하며 119에 신고를한다. \n
+2.손등으로 출입문 손잡이를 살짝 만져본뒤 손잡이가 따뜻하거나 뜨겁다면 반대편에 불이났다는것이니 문을열지 않도록한다.\n
+3.연기가 들어오는방향을 본뒤 계단으로 피할지 창문쪽으로가서 구조를 요청할지 결정한다.\n
+4.대피시에는 엘레베이터를 절대 사용하지말고 계단으로 대피하고 창문가에 있을시엔 구조요청이나 경량 칸막이,완강기등을 이용해 탈출한다.\n
+5.탈출한뒤엔 지인이나 주변사람이 있는지 확인한뒤 없는인원이있다면 소방관에게 알린다."
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:srcCompat="@drawable/burning" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:text="실외화재시\n
+1.산불을 발견했을시 초기의 작은화재는 외투등으로 두드리거나 덮어 진화하고 소방서나 안된다면 경찰서라도 연락을 한다.\n
+2.산불의 규모가 크다면 산불발생지역에서 벗어나 근처의 큰 공터나 운동장등의 안전지대로 신속히 대피한다.\n
+3.산불에 둘러쌓였을시엔 바람을 등지고 주변의 불에탈만한 물건들을 최대한 멀리 치운뒤 소방서나 경찰서에 신고하여 구조를 요청하고 낮은자세로 엎드려 구조를 기다린다.\n
+4.주택가에 산불이 확산될경우 집주위에 물을 뿌린뒤 문과 창문을 닫고 가스나 기름통등을 최대한 치우도록한다.\n
+5.주택가에 가만히 대기하는것보다 가까운 안전지대로 대피하고,대피령이 발령되면 지시에따라 안전하고 신속히 대피하도록한다."
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+</ScrollView>

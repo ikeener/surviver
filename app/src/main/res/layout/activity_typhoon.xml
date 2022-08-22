@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#EAEAEA">
+
+    <!-- 어떤 Layout을 사용해도 상관없음 -->
+    <!-- 스크롤 바를 위한 공간 확보용 paddingRight="5px" 주목 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingRight="5px" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="태풍"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:background="#FF9966"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            />
+
+        <Button
+            android:id="@+id/RefugeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClickRefuge"
+            android:text="대피소 위치"
+            android:background="@drawable/button_main_shape"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:text="태풍발생시\n
+1.나와 가족등의 안전을위해 외출은 최대한자제하고 라디오등을 통해 지속적으로 정보를 받는다.\n
+2.건물,집안등 실내에서의 안전수칙을 미리알아두고 가족과함께 확인한다.\n
+3.위험지역(침수지역,산간,계곡등)에 있을시엔 사람들과함께 즉시 안전한장소로 이동한다.\n
+4.정전발생시엔 양초사용보단 휴대용랜턴이나 휴대폰을 이용해 불을 밝히도록한다.\n
+5.태풍이 지나갔을시엔 다른사람들과 함께 주변의 피해여부를 확인하며 2차적인 피해를 예방하도록한다."
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/typhoon" />
+
+
+    </LinearLayout>
+</ScrollView>

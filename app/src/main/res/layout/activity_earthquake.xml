@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#EAEAEA">
+
+    <!-- 어떤 Layout을 사용해도 상관없음 -->
+    <!-- 스크롤 바를 위한 공간 확보용 paddingRight="5px" 주목 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingRight="5px" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지진"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:background="#FF9966"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            />
+
+        <Button
+            android:id="@+id/RefugeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClickRefuge"
+            android:text="대피소 위치"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_main_shape"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:text="지진발생시\n
+1.지진이 발생했을시 중심이 낮고 튼튼한 탁자등의 아래로 들어가 탁자다리를 잡고 몸을 보호한다.\n
+2.탁자아래같이 피할곳이 없다면 방석등으로 머리를 최대한 보호한다.\n
+3.흔들림이 멈추면 가스와 전기불을 끄고 문과 창문을 열어 언제든 대피할수 있도록한다.\n
+4.바깥에 나가게되면 유리나 물건들이 떨어질염려가 있으므로 건물들과는 최대한 거리를벌려서 머리를 보호하며 운동장같은 넓은공간으로 피한다.\n
+5.이동시엔 차량등을 이용하지않고 걸어서대피하며 대피장소에서 추후 지시를 기다린다."
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/earthquake" />
+
+
+    </LinearLayout>
+</ScrollView>

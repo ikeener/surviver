@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAEAEA">
+
+        <TextView
+            android:id="@+id/titlePopupNotification"
+            android:text="알림 내용 입력"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="#ff9966"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 재난유형"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="25dp">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioBtn_fire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="화재"
+                    android:textSize="15dp"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/radioBtn_typhoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="태풍"
+                    android:textSize="15dp"/>
+                <RadioButton
+                    android:id="@+id/radioBtn_earthquake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지진"
+                    android:textSize="15dp"/>
+                <RadioButton
+                    android:id="@+id/radioBtn_landslide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="산사태"
+                    android:textSize="15dp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 피해유형"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/check_BuildingBreak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="건물파손"/>
+                <CheckBox
+                    android:id="@+id/check_RoadFailure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도로파손"/>
+                <CheckBox
+                    android:id="@+id/check_Inundation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="침수피해"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/check_BuildingCollapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="건물붕괴"/>
+                <CheckBox
+                    android:id="@+id/check_NoAccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도로통행불가"/>
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 발생위치"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/et_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="발생한 위치를 입력해주세요"
+            android:textSize="20dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_main_shape"
+            android:text="보내기"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:textSize="20dp"
+            android:background="@drawable/button_main_shape"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
