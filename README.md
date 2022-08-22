@@ -9,21 +9,27 @@
 
 ## 메인 페이지
 
-![image](https://user-images.githubusercontent.com/65940253/185845697-418e7c28-52af-4253-9c2f-a4eaffcced13.png)
+![image](https://user-images.githubusercontent.com/65940253/185846113-877482d7-de00-4d7c-a847-a5ebeb5d5b01.png)
+
 
 ## 로그인 페이지
 
-![image](https://user-images.githubusercontent.com/65940253/185845708-2aafdca2-cde9-4388-89f8-842173764398.png)
+![image](https://user-images.githubusercontent.com/65940253/185846154-154477fa-f7b0-43af-9b5b-1dd629dc2e85.png)
+
 
 ## 주변 알림 기능
 
-![image](https://user-images.githubusercontent.com/65940253/185845654-6e5b6e4f-0b80-412b-86c0-14bbbfd9776d.png)
+![image](https://user-images.githubusercontent.com/65940253/185846178-86926152-5dd4-4334-9bed-f40c7bc73303.png)
+
 
 ## 재난 페이지
 
-![image](https://user-images.githubusercontent.com/65940253/185845668-18792bff-8fee-48d6-8ad1-f4be4352bfc5.png)
-![image](https://user-images.githubusercontent.com/65940253/185845675-fdd637d5-ed86-417b-afe3-adf0b42f3b4f.png)
+![image](https://user-images.githubusercontent.com/65940253/185846190-12a7d8d6-dd39-46be-9221-9be1369e6138.png)
+![image](https://user-images.githubusercontent.com/65940253/185846207-5c779732-47ca-4d22-b3d8-8af6d4cf3338.png)
 
-## 응급실 위치 확인
 
-![image](https://user-images.githubusercontent.com/65940253/185845682-94cd039b-c532-482c-a7d0-2ce1c76fdcfe.png)
+## 응급실 및 대피소 위치 확인
+
+![image](https://user-images.githubusercontent.com/65940253/185846234-f48edc25-7390-47c6-a8ee-64971b377224.png)
+![image](https://user-images.githubusercontent.com/65940253/185846249-db4ac0bc-2530-4ceb-aa65-e708563f9743.png)
+
